@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/review_bg"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/rlUser"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample Title"
+            android:textSize="15dp"
+            android:fontFamily="@font/bold_font"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/rlRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:numStars="5"
+            android:isIndicator="true"
+            android:stepSize=".5"
+            android:theme="@style/RatingBar"
+            android:rating="0" />
+
+        <TextView
+            android:id="@+id/rlReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Sample Title"
+            android:justificationMode="inter_word"
+            android:padding="10dp"
+            android:background="@drawable/comment_bg"
+            android:fontFamily="@font/regular_font"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rlDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample Title"
+            android:fontFamily="@font/movie_title"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+    </LinearLayout>
+</LinearLayout>

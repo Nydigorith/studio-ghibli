@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_bg"
+    android:orientation="vertical"
+    tools:context=".Review">
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <ImageView
+          android:layout_width="300dp"
+          android:layout_height="340dp"
+          android:background="@drawable/all_bg"
+          android:layout_marginTop="155dp"
+          android:layout_centerHorizontal="true">
+      </ImageView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+      <pl.droidsonroids.gif.GifImageView
+          android:layout_width="150dp"
+          android:layout_weight="1"
+          android:layout_marginTop="70dp"
+          android:layout_height="100dp"
+          android:src="@drawable/review_icon">
+      </pl.droidsonroids.gif.GifImageView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="150dp"
+        android:layout_weight="1"
+        android:layout_marginTop="70dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ghost">
+    </pl.droidsonroids.gif.GifImageView>
+</LinearLayout>
+      <TextView
+          android:layout_width="300dp"
+          android:layout_height="30dp"
+          android:layout_marginTop="155dp"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/title_bg"
+          android:textSize="20dp">
+      </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:fontFamily="@font/bold_font"
+        android:textColor="@color/white"
+        android:text="How was the movie?" />
+
+    <RatingBar
+        android:id="@+id/etRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:stepSize=".5"
+        android:theme="@style/RatingBar"
+        android:rating="0" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etReview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:fontFamily="@font/regular_font"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/etext_bg"
+            android:hint="Type here..."
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#A8FFFFFF"
+            android:textSize="13dp" />
+
+        </LinearLayout>
+</RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_marginTop="20dp"
+            android:layout_width="140dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bold_font"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg"
+            android:layout_height="wrap_content"
+            android:text="Submit"  />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_marginTop="25dp"
+            android:layout_width="140dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bold_font"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center|right"
+          android:orientation="horizontal">
+
+          <Button
+              android:id="@+id/btnBack"
+              android:layout_width="match_parent"
+              android:layout_marginBottom="5dp"
+              android:layout_marginStart="10dp"
+              android:layout_marginEnd="10dp"
+              android:layout_height="40dp"
+              android:fontFamily="@font/bold_font"
+              android:layout_gravity="bottom"
+              android:background="@drawable/b_button_bg"
+              android:text="Back"
+              android:textColor="@color/white"
+              android:textStyle="bold" />
+      </LinearLayout>
+  </RelativeLayout>
+</LinearLayout>

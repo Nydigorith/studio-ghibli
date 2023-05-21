@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.firebase"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.daimajia.easing:library:2.4@aar'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+  //  implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    //implementation 'com.afollestad.material-dialogs:core:3.3.0'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1'
+    implementation 'org.apache.commons:commons-text:1.9'
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+    implementation 'com.google.firebase:firebase-database:20.2.1'
+    implementation 'com.google.firebase:firebase-auth:21.0.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WatchlistActivity"
+    android:background="@drawable/reg_bg"
+    android:orientation="vertical">
+
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent">
+
+
+      <pl.droidsonroids.gif.GifImageView
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginTop="12dp"
+          android:src="@drawable/watch_list">
+      </pl.droidsonroids.gif.GifImageView>
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="100dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/wlist_bg">
+      </ImageView>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:layout_marginTop="100dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvNoWatchlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:text="Empty Watchlist"
+        android:background="@drawable/wtitle_bg"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/bold_font"
+        android:layout_marginEnd="10dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+          <TextView
+              android:id="@+id/tvWatchlist"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:textSize="25dp"
+              android:padding="10dp"
+              android:text="Watchlist"
+              android:background="@drawable/wtitle_bg"
+              android:layout_marginStart="10dp"
+              android:fontFamily="@font/bold_font"
+              android:layout_marginEnd="10dp"
+              android:textAppearance="?android:textAppearanceMedium"
+              android:textColor="@color/white"
+              android:visibility="gone"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWatchlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/bold_font"
+        android:background="@drawable/b_button_bg"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+</LinearLayout>
+</RelativeLayout>
+
+      </LinearLayout>
+  </RelativeLayout>
+</LinearLayout>
